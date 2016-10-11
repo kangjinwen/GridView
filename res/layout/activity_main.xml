@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hello_world" />
+    
+    <ListView 
+    	 android:id="@+id/list"
+		 android:layout_width="fill_parent"
+		 android:layout_height="fill_parent"
+		 android:layout_marginLeft="7dip"
+       	 android:layout_marginRight="7dip"
+       	 android:layout_marginBottom="7dip"
+       	 android:layout_below="@+id/title"
+		 android:cacheColorHint="#00000000"
+		 android:drawSelectorOnTop="false" 
+		 android:listSelector="#00000000"
+		 android:scrollbars="none"
+		 android:scrollingCache="true"
+    	 android:drawingCacheQuality="low"
+    	 android:divider="#00000000"
+    	 android:dividerHeight="0dip"
+    	 android:fadingEdgeLength="0.0sp" 
+   	/>
+    
+
+</RelativeLayout>
